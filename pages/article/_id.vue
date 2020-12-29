@@ -11,6 +11,15 @@
         written by {{ article.users_permissions_user.username }}
       </p>
       <div class="my-5" v-html="$md.render(article.Content)"></div>
+      <button
+        v-if="
+          $strapi.user && article.users_permissions_user.id === $strapi.user.id
+        "
+        class="button--grey"
+        @click="deletePost(article.id)"
+      >
+        Delete
+      </button>
     </div>
   </div>
 </template>
@@ -20,8 +29,13 @@ export default {
   async asyncData({ $strapi, route }) {
     const id = route.params.id
     const article = await $strapi.$articles.findOne(id)
-    console.log(article)
     return { article }
+  },
+  methods: {
+    async deletePost(id) {
+      await this.$strapi.$articles.delete(id)
+      this.$nuxt.$router.push('/articles')
+    },
   },
   middleware({ $strapi, redirect }) {
     if ($strapi.user === null) {

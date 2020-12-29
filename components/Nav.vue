@@ -8,7 +8,10 @@
       <NuxtLink class="border-r px-3" to="/signup">Signup</NuxtLink>
     </div>
     <div v-if="$strapi.user !== null">
-      <span class="border-r px-3">{{ $strapi.user.username }}</span>
+      <span class="border-r px-3">
+        <!-- <font-awesome-icon icon="fa-user-circle" /> -->
+        {{ $strapi.user.username }}</span
+      >
       <NuxtLink class="border-r px-3" to="/new">Create Post</NuxtLink>
       <button class="pl-3" @click="logout">Logout</button>
     </div>
@@ -16,8 +19,14 @@
 </template>
 
 <script>
+// import { faUserCircle } from '@fortawesome/free-regular-svg-icons'
 export default {
   name: 'Nav',
+  // computed: {
+  //   faUserCircle() {
+  //     return faUserCircle
+  //   },
+  // },
   methods: {
     async logout() {
       await this.$strapi.logout()

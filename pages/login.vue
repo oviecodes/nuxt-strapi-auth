@@ -3,7 +3,7 @@
     <div v-show="error !== ''" class="p-3 border">
       <p>{{ error }}</p>
     </div>
-    <h1 class="font-bold text-2xl md:text-4xl mt-5">This is the login page</h1>
+    <h1 class="font-bold text-2xl md:text-4xl mt-5">Login</h1>
     <form @submit="loginUser">
       <div>
         <input

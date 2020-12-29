@@ -3,6 +3,13 @@
     <Nav class="mx-auto sticky top-0" />
     <h1 class="text-center my-5">All our articles</h1>
     <div
+      v-show="error !== ''"
+      class="sticky z-100 border p-5 m-3 top-0 bg-black text-white text-center mx-auto w-4/5 sm:w-4/5 md:w-4/5 lg:w-1/2"
+    >
+      <p class="m-1 sm:m-3">{{ error }}</p>
+      <button class="button--grey" @click="resetError()">Ok</button>
+    </div>
+    <div
       v-for="(article, i) in data"
       :key="i"
       class="sm:flex sm:space-x-5 my-5 shadow-lg mx-auto w-4/5 sm:w-4/5 md:w-4/5 lg:w-1/2"
@@ -38,9 +45,11 @@ export default {
         this.error = ''
         this.$nuxt.$router.push(`/article/${article.id}`)
       } else {
-        this.error = 'please Login to read articles'
-        alert(this.error)
+        this.error = 'Please Login to read articles'
       }
+    },
+    resetError() {
+      this.error = ''
     },
   },
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="w-4/5 mx-auto md:w-1/2 text-center my-12">
-    <h1 class="font-bold text-2xl md:text-4xl mt-5">This is the Signup page</h1>
+    <h1 class="font-bold text-2xl md:text-4xl mt-5">Signup</h1>
     <form @submit="createUser">
       <div>
         <input
