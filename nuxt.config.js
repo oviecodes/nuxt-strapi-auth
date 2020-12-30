@@ -27,7 +27,6 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    // '@nuxtjs/fontawesome',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -64,10 +63,4 @@ export default {
     injected: true,
     // use: ['markdown-it-div', 'markdown-it-attrs'],
   },
-
-  // fontawesome: {
-  //   icons: {
-  //     regular: [ 'faUserCircle' ],
-  //   }
-  // },
 }
