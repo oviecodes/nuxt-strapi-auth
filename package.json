@@ -27,7 +27,7 @@
     "@nuxtjs/markdownit": "^1.2.10",
     "@nuxtjs/pwa": "^3.0.2",
     "@nuxtjs/strapi": "^0.1.9",
-    "core-js": "^3.6.5",
+    "core-js": "^3.8.2",
     "markdown-it-attrs": "^3.0.3",
     "markdown-it-div": "^1.1.0",
     "nuxt": "^2.14.6"
