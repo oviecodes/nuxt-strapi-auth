@@ -1246,7 +1246,7 @@
     html-minifier "^4.0.0"
     node-html-parser "^2.0.0"
 
-"@nuxt/http@^0.6.1":
+"@nuxt/http@^0.6.2":
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/@nuxt/http/-/http-0.6.2.tgz#194002fcf037f69b1572a6439f449839154e4b6a"
   integrity sha512-XD1w1W92iKqA5Jo7pT3AgoLsWIUy4k3Ae7zyi+sgmFLReISjvr8neXbWiwxRm0yolsAg/WM++gDKFfGTh2LH8g==
@@ -1352,10 +1352,10 @@
     "@types/webpack-dev-middleware" "^3.7.2"
     "@types/webpack-hot-middleware" "^2.25.3"
 
-"@nuxt/ufo@^0.5.0", "@nuxt/ufo@^0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/ufo/-/ufo-0.5.2.tgz#cb40e4b3001739baebddfd65d0f03d6070e2c0e5"
-  integrity sha512-nnKFQ4NA5id5ekyQWHTdOfirIZRQzfEHMB9T0T6NZdWy4+3Nrw0GTBQ3J9Am0gg8kvqR0mMQTn1wK6ya3i/XmA==
+"@nuxt/ufo@^0.5.0", "@nuxt/ufo@^0.5.2", "@nuxt/ufo@^0.5.3":
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/ufo/-/ufo-0.5.4.tgz#2e1428e2c947cc559d566c27786525bf0f40fbc8"
+  integrity sha512-JZOGDlt2BvLCBmLhrchhRJ6tP9PBfSWLdsHC+JVJ5Qp8/hT/2u61cSsLS30zUOwcPRaQ3y2oHNkEiKJ5v90iEQ==
 
 "@nuxt/utils@2.14.12":
   version "2.14.12"
@@ -1523,17 +1523,17 @@
     serve-static "^1.14.1"
     workbox-cdn "^5.1.4"
 
-"@nuxtjs/strapi@^0.1.9":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/strapi/-/strapi-0.1.9.tgz#612bf6c19c539c87df97bafd8547c5f6213fa43a"
-  integrity sha512-sjmGyn0yRniiSDXTnrDV0l/NdYYQ/Col474ktQeOrcyC/l4Oip53j8nDnuTvmwR7ALeXjBi/7XA97/b0ZRCg9g==
+"@nuxtjs/strapi@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/strapi/-/strapi-0.1.10.tgz#d4ab4eb24ca8f4aa399b9a4d6b5bc465f3e452c7"
+  integrity sha512-/ySZITD+jXGUOKMbklUj9Ea53U7M/cop+qIkKmpiAlvWD4j3eIIA7W+2mrfCQbPN+FSKuoKquhXZ0DICtSWMxA==
   dependencies:
-    "@nuxt/http" "^0.6.1"
-    "@nuxt/ufo" "^0.5.2"
+    "@nuxt/http" "^0.6.2"
+    "@nuxt/ufo" "^0.5.3"
     cookie-universal-nuxt "^2.1.4"
     defu "^3.2.2"
     hookable "^4.3.1"
-    requrl "^3.0.1"
+    requrl "^3.0.2"
 
 "@nuxtjs/stylelint-module@^4.0.0":
   version "4.0.0"
@@ -9409,7 +9409,7 @@ requires-port@^1.0.0:
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
-requrl@^3.0.1:
+requrl@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/requrl/-/requrl-3.0.2.tgz#d376104193b02a2d874dde68454c2db2dfeb0fac"
   integrity sha512-f3gjR6d8MhOpn46PP+DSJywbmxi95fxQm3coXBFwognjFLla9X6tr8BdNyaIKNOEkaRbRcm0/zYAqN19N1oyhg==
