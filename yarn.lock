@@ -1246,7 +1246,7 @@
     html-minifier "^4.0.0"
     node-html-parser "^2.0.0"
 
-"@nuxt/http@^0.6.1":
+"@nuxt/http@^0.6.2":
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/@nuxt/http/-/http-0.6.2.tgz#194002fcf037f69b1572a6439f449839154e4b6a"
   integrity sha512-XD1w1W92iKqA5Jo7pT3AgoLsWIUy4k3Ae7zyi+sgmFLReISjvr8neXbWiwxRm0yolsAg/WM++gDKFfGTh2LH8g==
@@ -1523,17 +1523,19 @@
     serve-static "^1.14.1"
     workbox-cdn "^5.1.4"
 
-"@nuxtjs/strapi@^0.1.9":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/strapi/-/strapi-0.1.9.tgz#612bf6c19c539c87df97bafd8547c5f6213fa43a"
-  integrity sha512-sjmGyn0yRniiSDXTnrDV0l/NdYYQ/Col474ktQeOrcyC/l4Oip53j8nDnuTvmwR7ALeXjBi/7XA97/b0ZRCg9g==
+"@nuxtjs/strapi@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/strapi/-/strapi-0.3.0.tgz#d1c3e2b0b023a45a5972281ee197e4068879841e"
+  integrity sha512-BsETj8JvAJj/JKYOh4lwd+GElhz7UdZX5oiCfIa+l4hegn/I+MAtrscFqo0ATHksOITaH4D4H3G/FsOb65UUnw==
   dependencies:
-    "@nuxt/http" "^0.6.1"
-    "@nuxt/ufo" "^0.5.2"
+    "@nuxt/http" "^0.6.2"
     cookie-universal-nuxt "^2.1.4"
     defu "^3.2.2"
+    destr "^1.0.1"
     hookable "^4.3.1"
-    requrl "^3.0.1"
+    ms "^2.1.3"
+    requrl "^3.0.2"
+    ufo "^0.5.4"
 
 "@nuxtjs/stylelint-module@^4.0.0":
   version "4.0.0"
@@ -7294,7 +7296,7 @@ ms@2.1.2:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-ms@^2.1.1:
+ms@^2.1.1, ms@^2.1.3:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
@@ -9409,7 +9411,7 @@ requires-port@^1.0.0:
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
-requrl@^3.0.1:
+requrl@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/requrl/-/requrl-3.0.2.tgz#d376104193b02a2d874dde68454c2db2dfeb0fac"
   integrity sha512-f3gjR6d8MhOpn46PP+DSJywbmxi95fxQm3coXBFwognjFLla9X6tr8BdNyaIKNOEkaRbRcm0/zYAqN19N1oyhg==
@@ -10699,6 +10701,11 @@ uc.micro@^1.0.1, uc.micro@^1.0.5:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/uc.micro/-/uc.micro-1.0.6.tgz#9c411a802a409a91fc6cf74081baba34b24499ac"
   integrity sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==
+
+ufo@^0.5.4:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/ufo/-/ufo-0.5.4.tgz#a9b469fdc56fe27169f6f474ed590cc7b0fd4ebe"
+  integrity sha512-JxWFr31rhXXufMQKpV2CxFNrc1p9//aqHguWR32M0jPQnw2TNK9sERd7Bic+ZSprlmDPRPR4yuSueLNT8hsdQA==
 
 uglify-js@^3.5.1:
   version "3.12.3"
