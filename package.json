@@ -30,7 +30,7 @@
     "core-js": "^3.6.5",
     "markdown-it-attrs": "^3.0.3",
     "markdown-it-div": "^1.1.0",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.15.5"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
