@@ -10,17 +10,17 @@
       <button class="button--grey" @click="resetError()">Ok</button>
     </div>
     <div
-      v-for="(article, i) in data"
+      v-for="(article, i) in data.data"
       :key="i"
       class="sm:flex sm:space-x-5 my-5 shadow-lg mx-auto w-4/5 sm:w-4/5 md:w-4/5 lg:w-1/2"
     >
       <img
-        :src="`http://localhost:1337${article.image.url}`"
+        :src="`http://localhost:1337${article.attributes.Image.data.attributes.formats.small.url}`"
         class="max-h-screen sm:h-48"
       />
       <div class="px-2 sm:pr-2 sm:text-left text-center">
-        <h3 class="font-bold my-3">{{ article.Title }}</h3>
-        <p class="my-3">{{ article.description }}</p>
+        <h3 class="font-bold my-3">{{ article.attributes.name }}</h3>
+        <p class="my-3">{{ article.attributes.description }}</p>
         <button class="button--green mb-4 sm:mb-0" @click="readPost(article)">
           Read more
         </button>
@@ -31,7 +31,9 @@
 <script>
 export default {
   async asyncData({ $strapi, $md }) {
-    const data = await $strapi.$articles.find()
+    const data = await $strapi.$articles.find({ populate: '*' })
+
+    console.log(data.attributes)
     return { data }
   },
   data() {

@@ -42,6 +42,7 @@ export default {
   ],
 
   strapi: {
+    url: process.env.STRAPI_URL || 'http://localhost:1337/api',
     entities: ['articles'],
   },
 
@@ -62,5 +63,8 @@ export default {
     breaks: true,
     injected: true,
     // use: ['markdown-it-div', 'markdown-it-attrs'],
+  },
+  env: {
+    STRAPI_URL: `http://localhost:1337/api`,
   },
 }

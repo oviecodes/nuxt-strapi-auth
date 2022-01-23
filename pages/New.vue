@@ -4,7 +4,7 @@
       <h2 class="font-bold text-2xl md:text-4xl mt-5">Create a new post</h2>
       <div>
         <input
-          v-model="form.Title"
+          v-model="form.name"
           name="Title"
           type="text"
           placeholder="title"
@@ -22,7 +22,7 @@
       </div>
       <div>
         <textarea
-          v-model="form.Content"
+          v-model="form.content"
           name="Content"
           cols="30"
           rows="10"
@@ -41,9 +41,9 @@
         <button
           class="button--green"
           :disabled="
-            form.Title === '' ||
+            form.name === '' ||
             form.description === '' ||
-            form.Content === '' ||
+            form.content === '' ||
             fileInput === ''
           "
           type="submit"
@@ -60,10 +60,10 @@ export default {
   data() {
     return {
       form: {
-        Title: '',
+        name: '',
         description: '',
-        Content: '',
-        users_permissions_user: this.$strapi.user,
+        content: '',
+        users_permissions_user: this.$strapi.user.id,
       },
       fileInput: '',
     }
@@ -78,7 +78,7 @@ export default {
           file = el.files[0]
         }
       })
-      formData.append(`files.image`, file, file.name)
+      formData.append(`files.Image`, file, file.name)
       formData.append('data', JSON.stringify(this.form))
       e.preventDefault()
       await this.$strapi.$articles.create(formData)

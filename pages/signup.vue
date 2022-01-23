@@ -61,7 +61,7 @@ export default {
           username: this.username,
           password: this.password,
         })
-        console.log(newUser)
+        // console.log(newUser)
         if (newUser !== null) {
           this.error = ''
           this.$nuxt.$router.push('/articles')
