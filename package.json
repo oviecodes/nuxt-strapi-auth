@@ -28,7 +28,7 @@
     "@nuxtjs/pwa": "^3.0.2",
     "@nuxtjs/strapi": "^0.3.4",
     "core-js": "^3.6.5",
-    "markdown-it-attrs": "^3.0.3",
+    "markdown-it-attrs": "^4.1.6",
     "markdown-it-div": "^1.1.0",
     "nuxt": "^2.14.6"
   },
